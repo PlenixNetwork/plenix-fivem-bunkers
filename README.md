@@ -35,3 +35,9 @@ This is a standalone script.
 ```bash
 cd resources
 git clone https://github.com/PlenixNetwork/plenix-bunkers
+```
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
