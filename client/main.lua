@@ -1,6 +1,6 @@
 -- client/main.lua
 --========================================================--
---  Plenix Bunkers - Client
+--  Plenix FiveM Bunkers - Client
 --========================================================--
 
 if not Config then
@@ -55,8 +55,14 @@ local function LoadDoorModels()
     RequestModel(DOOR_TOP_MODEL)
     RequestModel(DOOR_BOTTOM_MODEL)
 
-    while not HasModelLoaded(DOOR_TOP_MODEL) or not HasModelLoaded(DOOR_BOTTOM_MODEL) do
-        Wait(0)
+    local timeout = 0
+    while (not HasModelLoaded(DOOR_TOP_MODEL) or not HasModelLoaded(DOOR_BOTTOM_MODEL)) and timeout < 5000 do
+        Wait(10)
+        timeout = timeout + 10
+    end
+
+    if timeout >= 5000 then
+        print("^3[plenix-fivem-bunkers]^7 Warning: Door models took too long to load")
     end
 end
 
