@@ -1,6 +1,6 @@
-# 🪖 Plenix Bunkers
+# 🪖 Plenix FiveM Bunkers
 
-**Plenix Bunkers** is a clean and configurable FiveM script that adds **interactive bunker entrances** with a smooth door animation, optional blips, interior styling, and safety rules while inside.
+**Plenix FiveM Bunkers** is a clean and configurable FiveM script that adds **interactive bunker entrances** with a smooth door animation, optional blips, interior styling, and safety rules while inside.
 
 Designed to be lightweight, easy to edit, and **fully configurable via `config.lua`**.
 
